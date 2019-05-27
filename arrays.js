@@ -1,5 +1,6 @@
 var chocolateBars = ["snicker", "hundred grand", "kitkat", "skittles"];
 
+<<<<<<< HEAD
 const array = [1]
 
 function addElementToBeginningOfArray(array, element) {
@@ -40,4 +41,12 @@ function destructivelyRemoveElementFromEndOfArray(array1) {
 
 function removeElementFromEndOfArray(array1) {
   return array1.slice(0, array1.length -1);
+=======
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array];
+}
+
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  return array.unshift(element);
+>>>>>>> 15cfbc4f57f9ddf0d38133c02d0b0dc41717cbbe
 }
